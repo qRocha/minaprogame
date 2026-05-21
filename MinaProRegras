@@ -1,0 +1,153 @@
+# 📖 Regras do MinerProGame
+
+Bem-vindo ao **MinerProGame** 💣
+Seu objetivo é simples:
+
+> revelar todas as células seguras sem explodir nenhuma bomba.
+
+Mas cuidado… cada decisão importa.
+
+---
+
+# 🎯 Objetivo do jogo
+
+Você vence quando:
+
+* revelar todas as células que NÃO possuem bombas
+
+Você perde quando:
+
+* clicar em uma bomba 💣
+
+---
+
+# 🖱️ Controles
+
+## Clique esquerdo
+
+Revela uma célula.
+
+* Se tiver número → ele indica quantas bombas existem ao redor
+* Se estiver vazia → áreas próximas são abertas automaticamente
+* Se for bomba → Game Over 💀
+
+---
+
+## Clique direito
+
+Coloca ou remove uma bandeira 🚩.
+
+Use bandeiras para marcar:
+
+* locais suspeitos
+* possíveis bombas
+
+---
+
+# 🔢 Significado dos números
+
+Os números mostram quantas bombas existem nas células ao redor.
+
+### Exemplo:
+
+| Número | Bombas próximas           |
+| ------ | ------------------------- |
+| 1      | Existe 1 bomba ao redor   |
+| 2      | Existem 2 bombas ao redor |
+| 3      | Existem 3 bombas ao redor |
+
+E assim por diante.
+
+---
+
+# ⚡ Power-Up Radar
+
+Algumas células possuem um radar escondido.
+
+Quando ativado:
+
+* bombas próximas aparecem temporariamente
+* elas ficam visíveis por alguns segundos
+* depois desaparecem novamente
+
+⚠️ Isso NÃO desarma as bombas.
+
+Serve apenas para ajudar estrategicamente.
+
+---
+
+# ⏱️ Cronômetro
+
+O tempo começa:
+
+* no primeiro clique
+* ou quando você coloca a primeira bandeira
+
+O cronômetro para:
+
+* ao vencer 😎
+* ou perder 😵
+
+---
+
+# 🎮 Dificuldades
+
+## 🟢 Iniciante
+
+* Grid: 8x8
+* Bombas: 10
+
+---
+
+## 🟡 Intermediário
+
+* Grid: 16x16
+* Bombas: 40
+
+---
+
+## 🔴 Especialista
+
+* Grid: 24x24
+* Bombas: 99
+
+---
+
+# 🧠 Estratégias
+
+* Nunca clique aleatoriamente no final da partida
+* Use bandeiras para organizar seu raciocínio
+* Observe padrões dos números
+* Aproveite o radar para localizar áreas perigosas
+* Comece pelas bordas ou espaços grandes
+
+---
+
+# 🏆 Vitória
+
+Você ganha quando:
+✅ todas as casas seguras forem reveladas
+
+O botão principal ficará:
+😎
+
+---
+
+# 💀 Derrota
+
+Você perde quando:
+❌ clicar em uma bomba
+
+Todas as bombas serão reveladas:
+💣
+
+E o botão ficará:
+😵
+
+---
+
+# 🚀 Boa sorte
+
+Agora é com você.
+
+Teste lógica, memória e estratégia para dominar o tabuleiro do **MinerProGame**.
