@@ -2,27 +2,80 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>MinaPro - Níveis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberMiner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
+
+    <div id="intro-overlay" class="intro-screen">
+        <div class="hud-modal">
+            <div class="hud-corners"></div>
+            
+            <h1 class="intro-title">CYBERMINER.exe</h1>
+            <p class="intro-subtitle">PROTOCOLO DE DESATIVAÇÃO DE MINAS INICIADO</p>
+            
+            <div class="rules-container">
+                <h3>🎯 OBJETIVO</h3>
+                <p>Desative o campo minado sem comprometer o núcleo do sistema.</p>
+                
+                <h3>🖱 CONTROLES</h3>
+                <p><span>Clique esquerdo</span> → Escaneia célula | <span>Clique direito</span> → Marca ameaça 🚩</p>
+                
+                <h3>🔢 LEITURA TÁTICA</h3>
+                <p>Os números indicam quantas minas existem nas células próximas.</p>
+                
+                <h3>⚡ RADAR QUÂNTICO</h3>
+                <p>Algumas células possuem tecnologia de varredura. Ao ativar, ameaças próximas são reveladas temporariamente por alguns segundos. <i>NÃO desarma explosivos.</i></p>
+                
+                <h3>⏱ CRONÔMETRO</h3>
+                <p>O sistema inicia no primeiro movimento ou ao marcar a primeira ameaça.</p>
+                
+                <h3>💀 FALHA CRÍTICA</h3>
+                <p>Ao tocar uma mina, o núcleo entra em colapso e o sistema é corrompido 💥.</p>
+                
+                <h3>🏆 MISSÃO COMPLETA</h3>
+                <p>Revele todas as áreas seguras para estabilizar o núcleo.</p>
+            </div>
+
+            <button id="init-system-btn">[ INICIALIZAR SISTEMA ]</button>
+        </div>
+    </div>
+
+    <div id="loading-screen" class="intro-screen hidden">
+        <div class="loading-content">
+            <h2 class="credits-text">Made by qRocha & Coutinho</h2>
+            <p class="loading-sub">Initializing Cyber Grid...</p>
+            <div class="cyber-bar"><div></div></div>
+        </div>
+    </div>
+
+    <div id="game-over-screen" class="overlay">
+        <h1 class="glitch-text">SISTEMA CORROMPIDO<br><span>VOCÊ PERDEU</span></h1>
+    </div>
+    <div id="win-screen" class="overlay">
+        <h1 class="victory-text">NÚCLEO ESTÁVEL<br><span>VOCÊ VENCEU</span></h1>
+    </div>
+
+    <div class="game-container game-locked">
         <div class="menu-superior">
-            <select id="difficulty">
-                <option value="easy">Iniciante (8x8 - 10 bombas)</option>
-                <option value="medium" selected>Intermediário (16x16 - 40 bombas)</option>
-                <option value="hard">Especialista (24x24 - 99 bombas)</option>
+            <select id="difficulty" disabled>
+                <option value="easy">NÍVEL: FÁCIL</option>
+                <option value="medium" selected>NÍVEL: MÉDIO</option>
+                <option value="hard">NÍVEL: DIRETOR</option>
             </select>
-            <button id="reset-btn">😊</button>
+            <button id="reset-btn" disabled>🔄</button>
         </div>
         
         <div class="stats">
-            <span>Bombas: <b id="bomb-count">0</b></span>
-            <span>Tempo: <b id="timer">0</b></span>
+            <div>MINAS: <span id="bomb-count">0</span></div>
+            <div>TEMPO: <span id="timer">0</span>s</div>
         </div>
 
         <div id="grid" class="grid"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
