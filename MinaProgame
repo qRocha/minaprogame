@@ -1,1 +1,30 @@
+index.html:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MinaPro - Níveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="menu-superior">
+            <select id="difficulty">
+                <option value="easy">Iniciante (8x8 - 10 bombas)</option>
+                <option value="medium" selected>Intermediário (16x16 - 40 bombas)</option>
+                <option value="hard">Especialista (24x24 - 99 bombas)</option>
+            </select>
+            <button id="reset-btn">😊</button>
+        </div>
+        
+        <div class="stats">
+            <span>Bombas: <b id="bomb-count">0</b></span>
+            <span>Tempo: <b id="timer">0</b></span>
+        </div>
+
+        <div id="grid" class="grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
